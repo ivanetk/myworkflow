@@ -14,8 +14,8 @@ jobs:
     steps:
     - name: echo the date
       run: echo "The current time and date in GitHub is $(date)"
-    - name: echo information about the contex
+    - name: echo information about the context
       run: echo "head_ref - ${{ github.head_ref }}, owner - ${{ github.repository_owner }}"
     - name: echo list runner name
-      run: echo "runner_name - ${{ runner.name }}"
+      run: echo "runner_os - ${{ runner.os }}"
 
