@@ -24,5 +24,7 @@ jobs:
       run: ls -l
     - name: Checkout the current repo
       uses: actions/checkout@v3
+      with:
+        ref: "${{ github.ref }}"
     - name: List my current directory after Checkout
       run: ls -l
