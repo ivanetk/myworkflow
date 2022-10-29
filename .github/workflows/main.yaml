@@ -3,7 +3,6 @@ name: My First Workflow
 # trigger
 on: #or [push]. Both are array notations in yaml
 - push
-
 # Jobs in the workflow
 jobs:
   # job name
@@ -17,4 +16,6 @@ jobs:
         run: echo "The current time and date in GitHub is $(date)"
       - name: echo information about the contex
         run: echo "head_ref - ${{ github.head_ref }}, owner - ${{ github.repository_owner }}"
+      - name: echo list runner name
+        run: echo "runner_name - ${{ github.name }}"
 
