@@ -17,5 +17,5 @@ jobs:
       - name: echo information about the contex
         run: echo "head_ref - ${{ github.head_ref }}, owner - ${{ github.repository_owner }}"
       - name: echo list runner name
-        run: echo "runner_name - ${{ github.name }}"
+        run: echo "runner_name - ${{ runner.name }}"
 
